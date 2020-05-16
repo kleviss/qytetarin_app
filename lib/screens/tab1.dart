@@ -24,7 +24,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(0.0),
           child: AppBar(
-          title: Text('Tab3'),
+          title: Text('Tab1'),
           leading: Icon(
             Icons.picture_in_picture_alt,
           ),
