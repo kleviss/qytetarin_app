@@ -1,6 +1,6 @@
 # qytetarinapp
 
-A new Flutter application for QytetarIN. Made with &lt;3 in Tirana.
+Made with <3 from  Qëndresa Qytetare - për qytetaret e Tiranës!
 
 ## Getting Started
 
