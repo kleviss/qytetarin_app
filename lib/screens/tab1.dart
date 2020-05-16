@@ -21,11 +21,14 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
   Widget build(BuildContext context) {
     print("Tab1 built");
     return Scaffold(
-        appBar: AppBar(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(0.0),
+          child: AppBar(
           title: Text('Tab3'),
           leading: Icon(
             Icons.picture_in_picture_alt,
           ),
+         )
         ),
       body: SafeArea(
         child: Stack(
@@ -73,7 +76,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
                             Icons.arrow_back
                         ),
 
-                        backgroundColor: Colors.black,
+                        backgroundColor: Colors.white70,
                         foregroundColor: Colors.red,
 
                         onPressed: () {
@@ -91,7 +94,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
                             Icons.rotate_left
                         ),
 
-                          backgroundColor: Colors.white,
+                          backgroundColor: Colors.white70,
                           foregroundColor: Colors.blue,
 
                           onPressed: () {
@@ -109,7 +112,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
                             Icons.arrow_forward
                         ),
 
-                          backgroundColor: Colors.black,
+                          backgroundColor: Colors.white70,
                           foregroundColor: Colors.green,
                           onPressed: () {
                             controller.data.goForward();

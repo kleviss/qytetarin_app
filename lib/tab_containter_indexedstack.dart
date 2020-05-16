@@ -19,18 +19,16 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
     super.initState();
     listScreens = [
       Tab1(),
-
     ];
   }
 
-//  @override
-//  bool get wantKeepAlive =>
-//      true; //by default it will be null, change it to true.
+@override
+  bool get wantKeepAlive => true; //by default it will be null, change it to true.
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      color: Colors.yellow,
+      color: Colors.white,
       home: Scaffold(
         body: IndexedStack(index: tabIndex, children: listScreens),
         bottomNavigationBar: BottomNavigationBar(
@@ -42,11 +40,11 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
             },
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.add_to_home_screen),
+                icon: Icon(Icons.timeline),
                 title: Text('Tab 1'),
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.question_answer),
+                icon: Icon(Icons.home),
                 title: Text('Tab 2'),
               ),
             ]),
