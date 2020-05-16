@@ -31,7 +31,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
         child: Stack(
           children: <Widget>[
             WebView(
-              initialUrl: 'https://flutter.dev/',
+              initialUrl: 'https://qytetarin.com/',
               javascriptMode: JavascriptMode.unrestricted,
               onWebViewCreated: (WebViewController webViewController) {
                 _controller.complete(webViewController);
