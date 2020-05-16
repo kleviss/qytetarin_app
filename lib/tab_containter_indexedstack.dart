@@ -19,6 +19,7 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
     super.initState();
     listScreens = [
       Tab1(),
+
     ];
   }
 
@@ -41,11 +42,11 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
             },
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.timeline),
+                icon: Icon(Icons.add_to_home_screen),
                 title: Text('Tab 1'),
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.question_answer),
                 title: Text('Tab 2'),
               ),
             ]),
