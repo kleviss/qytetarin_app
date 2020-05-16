@@ -29,8 +29,10 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       color: Colors.white,
-      home: Scaffold(
+      home: SafeArea(
+        child: Scaffold(
         body: IndexedStack(index: tabIndex, children: listScreens),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: tabIndex,
@@ -41,15 +43,16 @@ class _TabContainerIndexedStackState extends State<TabContainerIndexedStack> {
             },
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.timeline),
+                icon: Icon(Icons.home),
                 title: Text('Tab 1'),
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.supervisor_account),
                 title: Text('Tab 2'),
               ),
             ]),
         backgroundColor: Colors.black,
+      ),
       ),
     );
   }

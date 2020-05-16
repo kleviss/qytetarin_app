@@ -49,7 +49,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin{
               body: Center(
                 child: CircularProgressIndicator(
                   valueColor: new AlwaysStoppedAnimation<Color>(
-                      Colors.redAccent),
+                      Colors.blueAccent),
                 ),
               ),
               backgroundColor: Colors.white.withOpacity(0.70),
